@@ -16,7 +16,7 @@ if "model" not in st.session_state:
 def app():
     st.subheader('RNN-LSTM Based Typhoon Prediction in the Philippines')
     
-    text = """Aaron Raif B Torres, BSCS 3A 
+    text = """Journey Mariz Sermonia, BSCS 3-A AI
     \nCCS 229 - Intelligent Systems
     *Department of Computer Science
     *College of Information and Communications Technology
@@ -35,7 +35,7 @@ def app():
     https://en.wikipedia.org/wiki/List_of_typhoons_in_the_Philippines_(2000%E2%80%93present)"""
     st.write(text)  
 
-    df = pd.read_csv('./ph-typhoons-2000-2023.csv', header=0)
+    df = pd.read_csv('./ph-typhoons-2013-2023.csv', header=0)
 
     with st.expander('View Dataset'):
         # Load the data
@@ -61,7 +61,7 @@ def app():
     st.session_state.data_norm = data_norm
 
     # Split the data into training and testing sets
-    train_size = int(len(data_norm) * 0.8)
+    train_size = int(len(data_norm) * 0.😎
     test_size = len(data_norm) - train_size
     train_data, test_data = data_norm.iloc[0:train_size], data_norm.iloc[train_size:len(data_norm)]
 
@@ -239,5 +239,5 @@ def app():
         st.write('Predicted Typhoons for the next', years, 'years:')
         st.write(nextyear)
 
-if __name__ == '__main__':
-    app()   
+if _name_ == '_main_':
+    app()
