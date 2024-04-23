@@ -61,7 +61,7 @@ def app():
     st.session_state.data_norm = data_norm
 
     # Split the data into training and testing sets
-    train_size = int(len(data_norm) * 0.😎
+    train_size = int(len(data_norm) * 0.8)
     test_size = len(data_norm) - train_size
     train_data, test_data = data_norm.iloc[0:train_size], data_norm.iloc[train_size:len(data_norm)]
 
