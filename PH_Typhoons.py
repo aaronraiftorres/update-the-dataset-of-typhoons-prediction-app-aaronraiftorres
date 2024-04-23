@@ -238,6 +238,5 @@ def app():
 
         st.write('Predicted Typhoons for the next', years, 'years:')
         st.write(nextyear)
-
 if _name_ == '_main_':
     app()
